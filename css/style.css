@@ -20,27 +20,38 @@ header {
   width: 100%;
   height: 10vh;
 }
-
-.imglogo {
+header a {
+  color: #FAFBFD;
+  text-decoration: none;
+  font-style: italic;
+}
+header a img {
   height: 50px;
   margin-right: 5px;
   margin-top: 5px;
   margin-left: 10px;
 }
-
-.logo {
-  color: #FAFBFD;
-  text-decoration: none;
-  font-style: italic;
-}
-
-.tit {
+header a .tit {
   margin-top: 15px !important;
   font-size: 25px !important;
   font-family: "Lobster Two", cursive;
 }
-
-.nav-link {
+header .contnav .containerli {
+  list-style: none;
+  list-style-type: none;
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 15px;
+}
+header .contnav .containerli li {
+  display: inline-block;
+  margin-left: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  color: #FAFBFD;
+  margin-right: 10px;
+}
+header .contnav .containerli li .nav-link {
   display: inline;
   color: #FAFBFD;
   text-decoration: none;
@@ -53,14 +64,6 @@ header nav {
   display: inline-flex;
 }
 
-.containerli {
-  list-style: none;
-  list-style-type: none;
-  text-align: center;
-  margin-right: 10px;
-  margin-top: 15px;
-}
-
 .menu-icon img {
   width: 30px;
   height: 30px;
@@ -70,6 +73,11 @@ header nav {
 
 .menu-icon, #check {
   display: none;
+}
+
+.containerli li:hover {
+  color: bisque;
+  transition: 0.3s;
 }
 
 /* Inicio estilos responsive Header */
@@ -130,30 +138,8 @@ header nav {
   }
 }
 /* Fin estilos responsive Header */
-header nav ul li {
-  display: inline-block;
-  margin-left: 18px;
-  font-weight: 600;
-  font-size: 17px;
-  color: #FAFBFD;
-  margin-right: 10px;
-}
-
-.containerli li:hover {
-  color: bisque;
-  transition: 0.3s;
-}
-
 /* Fin estilos Header */
 /*Inicio estilos Menu Principal*/
-.main-index {
-  height: 800px;
-  width: 100%;
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-
 .main-prin {
   background-image: url(../Img/Banner.webp);
   background-size: 100%;
@@ -165,20 +151,26 @@ header nav ul li {
   align-items: center;
   flex-direction: column;
 }
-
-.parrafo {
+.main-prin .parrafo {
   text-align: center;
   color: #FAFBFD;
   font-size: 50px;
 }
-
+.main-prin .parrafo:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
 .main-prin div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.boton {
+.main-prin div a .boton:hover {
+  background-color: #472C1B;
+  color: #FAFBFD;
+  transition: 0.9s;
+}
+.main-prin div a .boton {
   padding: 8px 22px;
   font-size: 30px;
   margin: 0 auto;
@@ -208,17 +200,6 @@ header nav ul li {
   }
 }
 /* Fin estilos responsive Menu Principal */
-.boton:hover {
-  background-color: #472C1B;
-  color: #FAFBFD;
-  transition: 0.9s;
-}
-
-.parrafo:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
 /*Fin estilos Menu Principal*/
 /* Inicio estilos Main Nuestro Menu*/
 .main-nm {
@@ -226,38 +207,32 @@ header nav ul li {
   background-image: url(../Img/32.webp);
   overflow: hidden;
 }
-
 .main-nm h2 {
   margin: 20px;
   text-align: center;
   color: #472C1B;
 }
-
 .main-nm div {
   justify-content: center;
   overflow-x: hidden;
 }
-
-.slider-box {
+.main-nm .slider-box {
   width: 1280px;
   height: auto;
   margin: 50px auto 0;
 }
-
-.slider-box ul {
+.main-nm .slider-box ul {
   display: flex;
   padding: 0;
   width: 100%;
   animation: slide 20s infinite alternate ease-in-out;
 }
-
-.slider-box li {
+.main-nm .slider-box ul li {
   width: 100%;
   list-style: none;
   position: relative;
 }
-
-.slider-box img {
+.main-nm .slider-box ul li img {
   width: 65%;
   height: 40%;
   border: 2.5px solid #472C1B;
@@ -297,50 +272,22 @@ header nav ul li {
   margin-top: 35px;
   margin-bottom: 30px;
 }
-
-.text {
+.main-sec .tit2 {
+  text-align: center !important;
+  margin-top: 10px !important;
+}
+.main-sec div {
+  display: inline-flex;
+  margin: 20px;
+}
+.main-sec div .text {
   color: #472C1B;
   font-size: 25px;
   margin-top: 10px;
   margin-right: 40px;
   margin-left: 25px;
 }
-
-.tit2 {
-  text-align: center !important;
-  margin-top: 10px !important;
-}
-
-.main-sec div {
-  display: inline-flex;
-  margin: 20px;
-}
-
-.barista {
-  animation: vibrate 2.5s linear both;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(-2px, -2px);
-  }
-  60% {
-    transform: translate(2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-.barista {
+.main-sec div .barista {
   border-radius: 5%;
   height: 500px;
   width: 600px;
@@ -383,17 +330,32 @@ header nav ul li {
   margin-top: 10px;
   height: 90vh;
 }
-
 .main-res h2 {
   text-align: center;
 }
-
-.resena {
+.main-res .estrellas {
+  display: flex;
+  justify-content: center;
+}
+.main-res .estrellas img {
+  margin-left: 30px;
+  height: 70px;
+}
+.main-res .comentarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  margin-left: 20px;
+}
+.main-res .comentarios p {
+  margin: 30px;
+}
+.main-res .resena {
   display: flex;
   width: 100%;
 }
-
-.taza {
+.main-res .resena .taza {
   margin-top: 20px;
   height: 350px;
   width: 350px;
@@ -401,85 +363,47 @@ header nav ul li {
   margin: 30px;
   margin-left: 80px;
 }
-
-.taza:hover {
+.main-res .resena .taza:hover {
   transform: scale(1.1);
   transition: 1s;
 }
-
-.estrellas {
-  display: flex;
-  justify-content: center;
-}
-
-.estrellas img {
-  margin-left: 30px;
-  height: 70px;
-}
-
-.comentarios {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1px;
-  margin-left: 20px;
-}
-
-.comentarios p {
-  margin: 30px;
-}
-
-form {
+.main-res .resena form {
   display: flex;
   margin-left: 100px;
   margin-top: 60px;
 }
-
-#email {
-  margin-right: 21px;
-}
-
-.inputs {
+.main-res .resena form .inputs {
   margin-top: 10px;
 }
-
-.inputs div {
+.main-res .resena form .inputs div {
   margin: 20px;
   margin-top: 1px;
 }
-
-#comentar {
+.main-res .resena form .inputs div #email {
+  margin-right: 21px;
+}
+.main-res .resena form .inputs div #comentar {
   background-image: url(../Img/frase.webp);
   color: #FAFBFD;
   opacity: 85%;
   border-radius: 10px;
 }
-
-.comentario {
-  display: flex;
-  margin-left: 50px;
-  border: 2.5px solid #472C1B;
-}
-
-.comen {
+.main-res .resena form .comen {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-#com {
+.main-res .resena form .comen #com {
   opacity: 85%;
   border-radius: 10px;
 }
-
-.boton2 {
+.main-res .resena form .comen div .boton2 {
   padding: 5px;
   border-radius: 10px;
   width: 100px;
   margin: 10px;
 }
-
-.boton2:hover {
+.main-res .resena form .comen div .boton2:hover {
   background-color: #472C1B;
   color: #FAFBFD;
   transition: 0.5s;
@@ -533,7 +457,6 @@ form {
   background-image: url(../Img/Banner.webp);
   height: 90vh;
 }
-
 .main-contac h2 {
   display: flex;
   justify-content: right;
@@ -541,32 +464,27 @@ form {
   margin-top: 100px;
   color: #FAFBFD;
 }
-
-.contenedor {
+.main-contac .contenedor {
   display: flex;
 }
-
-.redes {
+.main-contac .contenedor .mapa {
+  margin-left: 90px;
+  border-radius: 30px;
+}
+.main-contac .contenedor .redes {
   display: flex;
   justify-content: right;
   margin-right: 275px;
   flex: 2;
 }
-
-.red {
+.main-contac .contenedor .redes .red {
   display: flex;
   margin: 40px;
   height: 45px;
 }
-
-.red:hover {
+.main-contac .contenedor .redes .red:hover {
   transform: scale(1.1);
   transition: 1s;
-}
-
-.mapa {
-  margin-left: 90px;
-  border-radius: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -602,7 +520,6 @@ footer {
   text-align: center;
   margin-top: auto;
 }
-
 footer p {
   display: flex;
   color: #FAFBFD;
