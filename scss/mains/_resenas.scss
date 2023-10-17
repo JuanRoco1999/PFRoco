@@ -1,0 +1,139 @@
+/*Inicio estilos Main Reseñas*/
+.main-res {
+    margin-top: 10px;
+    height: 90vh;
+    h2 {
+        text-align: center;
+    }
+    .estrellas{
+        display: flex;
+        justify-content: center;
+        img{
+            margin-left: 30px;
+            height: 70px;
+        }
+    }
+    .comentarios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+        margin-left: 20px;
+        p{
+            margin: 30px;
+        }
+    }
+    .resena {
+        display: flex;
+        width: 100%;
+        .taza {
+            margin-top: 20px;
+            height: 350px;
+            width: 350px;
+            border-radius: 100%;
+            margin: 30px;
+            margin-left: 80px;
+            &:hover{
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+        
+        form{
+            display: flex;
+            margin-left: 100px;
+            margin-top: 60px;
+            .inputs{
+                margin-top: 10px;
+                div{
+                    margin: 20px;
+                    margin-top: 1px;
+                    #email{
+                        margin-right: 21px;
+                    }
+                    #comentar{
+                        background-image: url(../Img/frase.webp);
+                        @extend .color-fondo;
+                        opacity: 85%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .comen{
+                @extend .flex-center;
+                #com{
+                    opacity: 85%;
+                    border-radius: 10px;
+                }
+                div{
+                    .boton2{
+                        padding: 5px;
+                        border-radius: 10px;
+                        width: 100px;
+                        margin: 10px;
+                        &:hover{
+                            background-color: $color-principal;
+                            @extend .color-fondo;
+                            transition: .5s;
+                            margin: 3px;
+                        }
+                    }
+                    
+                    
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-res {
+        height: auto;
+    }
+
+    .taza {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .resena {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comentarios p {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .comentario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.estrellas {
+    margin-left: 0; 
+    justify-content: center; 
+}
+    
+.estrellas img {
+        margin: 10px;
+        height: 40px; 
+}
+
+form {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .inputs div {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+/* Fin estilos Main Reseñas*/

@@ -1,4 +1,14 @@
 @charset "UTF-8";
+.flex-center, .main-res .resena form .comen {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.color-fondo, footer p, .main-contac h2, .main-res .resena form .comen div .boton2:hover, .main-res .resena form .inputs div #comentar, .menu-icon img, header .contnav .containerli li .nav-link, header .contnav .containerli li, header a {
+  color: #FAFBFD;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +31,6 @@ header {
   height: 10vh;
 }
 header a {
-  color: #FAFBFD;
   text-decoration: none;
   font-style: italic;
 }
@@ -48,12 +57,10 @@ header .contnav .containerli li {
   margin-left: 18px;
   font-weight: 600;
   font-size: 17px;
-  color: #FAFBFD;
   margin-right: 10px;
 }
 header .contnav .containerli li .nav-link {
   display: inline;
-  color: #FAFBFD;
   text-decoration: none;
   font-size: 20px;
   font-family: "Jaldi", sans-serif;
@@ -68,7 +75,6 @@ header nav {
   width: 30px;
   height: 30px;
   border-radius: 2px;
-  color: #FAFBFD;
 }
 
 .menu-icon, #check {
@@ -165,17 +171,17 @@ header nav {
   align-items: center;
   justify-content: center;
 }
-.main-prin div a .boton:hover {
-  background-color: #472C1B;
-  color: #FAFBFD;
-  transition: 0.9s;
-}
 .main-prin div a .boton {
   padding: 8px 22px;
   font-size: 30px;
   margin: 0 auto;
   border-radius: 20px;
   font-weight: bold;
+}
+.main-prin div a .boton:hover {
+  background-color: #472C1B;
+  color: #FAFBFD;
+  transition: 0.9s;
 }
 
 /* Inicio estilos responsive Menu Principal */
@@ -384,14 +390,8 @@ header nav {
 }
 .main-res .resena form .inputs div #comentar {
   background-image: url(../Img/frase.webp);
-  color: #FAFBFD;
   opacity: 85%;
   border-radius: 10px;
-}
-.main-res .resena form .comen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .main-res .resena form .comen #com {
   opacity: 85%;
@@ -405,7 +405,6 @@ header nav {
 }
 .main-res .resena form .comen div .boton2:hover {
   background-color: #472C1B;
-  color: #FAFBFD;
   transition: 0.5s;
   margin: 3px;
 }
@@ -443,8 +442,8 @@ header nav {
   form {
     margin: 20px 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .inputs div {
     margin: 10px 0;
@@ -462,7 +461,6 @@ header nav {
   justify-content: right;
   margin-right: 400px;
   margin-top: 100px;
-  color: #FAFBFD;
 }
 .main-contac .contenedor {
   display: flex;
@@ -522,7 +520,6 @@ footer {
 }
 footer p {
   display: flex;
-  color: #FAFBFD;
   justify-content: center;
   margin-top: 10px;
 }

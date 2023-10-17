@@ -1,0 +1,29 @@
+/* Inicio estilos Footer*/
+footer{
+    background-color: #47494C;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: auto;
+    p {
+        display: flex;
+        @extend .color-fondo;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 599px) {
+    .footer{
+        flex-direction: row;
+        margin: 2px;
+        height: 20vh;
+    }
+
+    footer #p1{
+        display: flex;
+        font-style: italic;
+        margin-top: 10px;
+    }
+}
+/* Fin estilos Footer*/
