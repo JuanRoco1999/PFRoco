@@ -17,6 +17,7 @@ header{
             margin-top: 15px !important;
             font-size: 25px !important;
             font-family: 'Lobster Two', cursive;
+            @extend .color-fondo;
         }
     }
     .contnav{
@@ -78,8 +79,16 @@ header nav{
         text-align: center;
     }
 
+    .boton, .boton2 {
+        font-size: 2px;
+        padding: 8px 12px;
+    }
+        
     .checkbtn {
         display: block;
+        width: 100%;
+        text-align: right;
+        
     }
     .menu-icon{
         display: block;
@@ -89,6 +98,16 @@ header nav{
         height: 40px;
         width: 40px;
         cursor: pointer;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contnav {
+        display: block; 
+        text-align: center; 
     }
 
     .contnav ul{    
@@ -102,21 +121,32 @@ header nav{
         right: 0;
     }
 
-    .contnav {
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-
     .contnav ul li:last-child{
         background: none;
         padding: 1rem;
     }
 
-    #check:checked ~ ul{
+    .containerli {
+        padding: 0;
+    }
+
+    .containerli li {
+        margin: 0;
+        padding: 1rem;
+        border-top: 1px solid #fff;
+
+    }
+
+    #check:checked ~ .containerli{
+        display: flex;
+        text-align: right;
+        flex-direction: column;
+        top: 70px;
         left: 0;
-        transition: all .25s;
+        background-color: #472C1B;
+        width: 100%;
+        height: 100vh;
+        right: 0;
     }
 }
 

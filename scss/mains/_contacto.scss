@@ -34,33 +34,36 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .main-contac {
-        height: auto;
-    }
-
-    .main-contac h2 {
-        margin-right: 130px;
-        margin-top: 20px;
-    }
-
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .redes {
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .red {
-        margin: 10px;
-    }
-
-    .mapa {
-        margin-left: 0;
-        width: 100%;
+        background-image: none; 
+        height: auto; 
+        h2 {
+            text-align: center !important; 
+            margin:0 auto;
+        }
+        .contenedor {
+            flex-direction: column; 
+            align-items: center; 
+            .mapa {
+                margin: 20px 0; 
+                border-radius: 10px; 
+                width: 100%; 
+                height: 300px; 
+            }
+            .redes {
+                justify-content: center; 
+                margin: 20px 0; 
+                .red {
+                    margin: 10px; 
+                    height: 30px; 
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
     }
 }
 /* Fin estilos Main Contacto*/

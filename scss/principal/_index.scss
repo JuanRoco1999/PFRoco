@@ -24,6 +24,7 @@
         align-items: center;
         justify-content: center;
         a{
+            margin: 2px;
             .boton{
                 padding: 8px 22px;
                 font-size: 30px;
@@ -34,7 +35,19 @@
                     background-color: $color-principal;
                     color: #FAFBFD;
                     transition: .9s;
-                }   
+                }  
+            }
+            .boton2{
+                padding: 8px 22px;
+                font-size: 30px;
+                margin: 0 auto;
+                border-radius: 20px;
+                font-weight: bold;
+                &:hover{
+                    background-color: $color-principal;
+                    color: #FAFBFD;
+                    transition: .9s;
+                }    
             }
 
         }
@@ -43,27 +56,35 @@
 }
 
 /* Inicio estilos responsive Menu Principal */
-@media (min-width: 600px) {
-    .parrafo{
-        font-size: 60px;
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton, .boton2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .parrafo {
+        text-align: center;
     }
 }
 
-@media (max-width: 599px) {
-    .parrafo{
-        font-size: 30px;
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media (min-width: 600px) {
-    .boton{
-        font-size: 25px;
+    .boton, .boton2 {
+        width: 100%;
+        margin-bottom: 10px;
     }
-}
 
-@media (max-width: 599px) {
-    .boton{
-        font-size: 20px;
+    .parrafo {
+        text-align: center;
     }
 }
 /* Fin estilos responsive Menu Principal */

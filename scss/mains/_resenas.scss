@@ -87,53 +87,68 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .main-res {
-        height: auto;
+        height: auto; 
     }
 
-    .taza {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-    }
-
-    .resena {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .comentarios p {
-        margin: 10px;
+    .main-res h2 {
         text-align: center;
     }
 
-    .comentario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .main-res .estrellas {
+        justify-content: center;
+        img {
+            margin: 10px; 
+            height: 50px; 
+        }
     }
 
-.estrellas {
-    margin-left: 0; 
-    justify-content: center; 
-}
-    
-.estrellas img {
-        margin: 10px;
-        height: 40px; 
-}
+    .main-res .comentarios {
+        display: block; 
+        margin-top: 20px; 
+        p {
+            margin: 10px; 
+        }
+    }
 
-form {
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+    .main-res .resena {
+        display: block;
+        .taza {
+            width: 100%; 
+            height: auto; 
+            margin: 20px auto; 
+            border-radius: 0; 
+            &:hover {
+                transform: none; 
+                transition: none; 
+            }
+        }
 
-    .inputs div {
-        margin: 10px 0;
-        text-align: center;
+        form {
+            display: block; 
+            margin: 20px 0; 
+            .inputs {
+                div {
+                    margin: 10px; 
+                }
+            }
+
+            .comen {
+                div {
+                    .boton2 {
+                        padding: 5px;
+                        width: 100%; 
+                        margin: 10px 0; 
+                        &:hover {
+                            background-color: $color-principal;
+                            transition: .5s;
+                            margin: 10px 0; 
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 /* Fin estilos Main Reseñas*/
