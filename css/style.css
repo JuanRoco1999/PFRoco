@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.color-fondo, footer p, .main-contac h2, .main-res .resena form .comen div .boton2:hover, .main-res .resena form .inputs div #comentar, .menu-icon img, header .contnav .containerli li .nav-link, header .contnav .containerli li, header a .tit, header a {
+.color-fondo, footer p, .main-contac h2, .main-res .resena form .comen div .boton2:hover, .main-res .resena form .inputs div #comentar, .main-res .comentarios .boton3:hover, .menu-icon img, header .contnav .containerli li .nav-link, header .contnav .containerli li, header a .tit, header a {
   color: #FAFBFD;
 }
 
@@ -94,10 +94,6 @@ header nav {
   }
   .imglogo {
     text-align: center;
-  }
-  .boton, .boton2 {
-    font-size: 2px;
-    padding: 8px 12px;
   }
   .checkbtn {
     display: block;
@@ -348,31 +344,31 @@ header nav {
 /* Inicio estilos responsive Sobre nosotros */
 @media (max-width: 768px) {
   .main-sec {
-    background-image: none; /* Elimina la imagen de fondo en dispositivos móviles */
-    height: auto; /* Ajusta la altura automáticamente al contenido */
-    margin-top: 20px; /* Ajusta el margen superior */
-    margin-bottom: 20px; /* Ajusta el margen inferior */
+    background-image: none;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .main-sec .tit2 {
     text-align: center !important;
     margin-top: 10px !important;
   }
   .main-sec div {
-    display: block; /* Cambia a bloque para que los elementos fluyan verticalmente */
-    margin: 10px; /* Ajusta el margen entre elementos */
+    display: block;
+    margin: 10px;
   }
   .main-sec div .text {
     color: #472C1B;
-    font-size: 20px; /* Reduce el tamaño del texto */
+    font-size: 20px;
     margin-top: 10px;
     margin-right: 0;
     margin-left: 0;
   }
   .main-sec div .barista {
     border-radius: 5%;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin: 20px auto; /* Centra la imagen horizontalmente y agrega margen superior e inferior */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
   }
 }
 /* Fin estilos responsive Sobre nosotros */
@@ -402,6 +398,19 @@ header nav {
 }
 .main-res .comentarios p {
   margin: 30px;
+}
+.main-res .comentarios .boton3 {
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 50px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+.main-res .comentarios .boton3:hover {
+  background-color: #472C1B;
+  transition: 0.5s;
+  margin: 3px;
 }
 .main-res .resena {
   display: flex;
@@ -457,7 +466,7 @@ header nav {
 
 @media (max-width: 768px) {
   .main-res {
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    height: auto;
   }
   .main-res h2 {
     text-align: center;
@@ -466,45 +475,45 @@ header nav {
     justify-content: center;
   }
   .main-res .estrellas img {
-    margin: 10px; /* Reduce el margen entre las estrellas */
-    height: 50px; /* Reduce el tamaño de las estrellas */
+    margin: 10px;
+    height: 50px;
   }
   .main-res .comentarios {
-    display: block; /* Cambia a bloque para que los comentarios fluyan verticalmente */
-    margin-top: 20px; /* Agrega margen superior */
+    display: block;
+    margin-top: 20px;
   }
   .main-res .comentarios p {
-    margin: 10px; /* Reduce el margen entre los párrafos */
+    margin: 10px;
   }
   .main-res .resena {
-    display: block; /* Cambia a bloque para que los elementos fluyan verticalmente */
+    display: block;
   }
   .main-res .resena .taza {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
-    margin: 20px auto; /* Centra la imagen horizontalmente y agrega margen superior e inferior */
-    border-radius: 0; /* Elimina el redondeo de la imagen */
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 0;
   }
   .main-res .resena .taza:hover {
-    transform: none; /* Elimina la transformación al hacer hover */
-    transition: none; /* Elimina la transición */
+    transform: none;
+    transition: none;
   }
   .main-res .resena form {
-    display: block; /* Cambia a bloque para que los elementos fluyan verticalmente */
-    margin: 20px 0; /* Agrega margen superior e inferior */
+    display: block;
+    margin: 20px 0;
   }
   .main-res .resena form .inputs div {
-    margin: 10px; /* Reduce el margen entre los campos de entrada */
+    margin: 10px;
   }
   .main-res .resena form .comen div .boton2 {
     padding: 5px;
-    width: 100%; /* Ocupa todo el ancho disponible */
-    margin: 10px 0; /* Ajusta el margen verticalmente */
+    width: 100%;
+    margin: 10px 0;
   }
   .main-res .resena form .comen div .boton2:hover {
     background-color: #472C1B;
     transition: 0.5s;
-    margin: 10px 0; /* Ajusta el margen verticalmente al hacer hover */
+    margin: 10px 0;
   }
 }
 /* Fin estilos Main Reseñas*/
@@ -544,30 +553,30 @@ header nav {
 
 @media (max-width: 768px) {
   .main-contac {
-    background-image: none; /* Elimina la imagen de fondo en dispositivos móviles */
-    height: auto; /* Ajusta la altura automáticamente al contenido */
+    background-image: none;
+    height: auto;
   }
   .main-contac h2 {
-    text-align: left !important; /* Centra el título */
-    margin: 0 auto; /* Ajusta el margen superior e inferior */
+    text-align: center !important;
+    margin: 0 auto;
   }
   .main-contac .contenedor {
-    flex-direction: column; /* Cambia a disposición vertical */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    align-items: center;
   }
   .main-contac .contenedor .mapa {
-    margin: 20px 0; /* Ajusta el margen superior e inferior del mapa */
-    border-radius: 10px; /* Redefine el radio del borde */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    height: 300px; /* Ajusta la altura del mapa */
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
   }
   .main-contac .contenedor .redes {
-    justify-content: center; /* Centra los elementos horizontalmente */
-    margin: 20px 0; /* Ajusta el margen superior e inferior de las redes sociales */
+    justify-content: center;
+    margin: 20px 0;
   }
   .main-contac .contenedor .redes .red {
-    margin: 10px; /* Ajusta el margen entre las redes sociales */
-    height: 30px; /* Ajusta el tamaño de las redes sociales */
+    margin: 10px;
+    height: 30px;
   }
   .main-contac .contenedor .redes .red:hover {
     transform: scale(1.1);

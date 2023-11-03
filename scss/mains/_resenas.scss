@@ -22,6 +22,20 @@
         p{
             margin: 30px;
         }
+        .boton3 {
+            padding: 5px;
+            border-radius: 10px;
+            width: 100px;
+            margin-top: 50px;
+            margin-right: 15px;
+            font-size: 13px;
+            &:hover{
+            background-color: $color-principal;
+            @extend .color-fondo;
+            transition: .5s;
+            margin: 3px;
+            }
+        }
     }
     .resena {
         display: flex;
