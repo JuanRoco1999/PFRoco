@@ -1,50 +1,43 @@
 /* Inicio estilos Main Nuestro Menu*/
-.main-nm{
-    height: 90vh;
-    background-image: url(../Img/32.webp) ;
-    overflow: hidden;
-    h2{
-        margin: 20px;
-        text-align: center;
-        color: $color-principal;
+.main-nm {
+    h2 {
+       font-size: 24px;
+       text-align: center;
+       margin-top: 10px;
+      /* Otros estilos para el encabezado */
     }
-    div{
-        justify-content: center;
-        overflow-x: hidden ;
-    }
-    .slider-box{
-        width: 1280px;
-        height: auto;
-        margin: 50px auto 0;
-        ul{
-            display: flex;
-            padding: 0;
-            width: 100%;
-            animation: slide 20s infinite alternate ease-in-out;
-            li{
-                width: 100%;
-                list-style: none;
-                position: relative;
-                img{
-                    width: 65%;
-                    height: 40%;
-                    border: 2.5px solid #472C1B;
-                }
-            }
+  
+    .carrusel {
+      display: flex;
+      overflow-x: auto;
+      gap: 55px;
+      padding: 100px;
+  
+      .elemento {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        p{
+            font-style: oblique;
         }
     }
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0%;}
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
+    }
+  
+@media (max-width: 768px) {
+      .carrusel {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+  
+        .elemento {
+          width: 100%;
+          margin-bottom: 10px;
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 /* Fin estilos Main Nuestro Menu*/

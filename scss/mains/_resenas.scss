@@ -100,7 +100,9 @@
         }
     }
 }
+/* Fin estilos Main Reseñas*/
 
+/*Inicio estilo responsive Reseñas*/
 @media (max-width: 768px) {
     .main-res {
         height: auto; 
@@ -124,6 +126,10 @@
         p {
             margin: 10px; 
         }
+        .boton3 {
+        display: block;
+        margin: 0 auto;
+        }
     }
 
     .main-res .resena {
@@ -140,8 +146,8 @@
         }
 
         form {
-            display: block; 
-            margin: 20px 0; 
+            display: block;
+            margin: 0 auto;
             .inputs {
                 div {
                     margin: 10px; 
@@ -149,6 +155,7 @@
             }
 
             .comen {
+
                 div {
                     .boton2 {
                         padding: 5px;
@@ -165,4 +172,71 @@
         }
     }
 }
-/* Fin estilos Main Reseñas*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-res {
+       margin-top: 20px;
+       height: 90vh;
+  
+      .estrellas {
+        img {
+          margin-left: 20px;
+          height: 50px;
+        }
+      }
+  
+      .comentarios {
+        margin-left: 0;
+  
+        p {
+          margin: 15px;
+        }
+  
+        .boton3 {
+          margin-top: 20px;
+          width: 80px;
+          font-size: 11px;
+        }
+      }
+  
+      .resena {
+        .taza {
+          height: 250px;
+          width: 250px;
+          margin-left: 30px;
+        }
+  
+        form {
+          margin-left: 50px;
+          margin-top: 30px;
+  
+          .inputs {
+            div {
+              margin: 15px;
+            }
+  
+            #email {
+              margin-right: 15px;
+            }
+  
+            #comentar {
+              opacity: 75%;
+            }
+          }
+  
+          .comen {
+            #com {
+              opacity: 75%;
+            }
+  
+            .boton2 {
+              margin: 8px;
+              width: 80px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+}
+/*Inicio estilo responsive Reseñas*/

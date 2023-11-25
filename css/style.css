@@ -96,9 +96,9 @@ header nav {
     text-align: center;
   }
   .checkbtn {
-    display: block;
-    width: 100%;
-    text-align: right;
+    display: block !important;
+    width: 100% !important;
+    text-align: right !important;
   }
   .menu-icon {
     display: block;
@@ -248,68 +248,40 @@ header nav {
 /* Fin estilos responsive Menu Principal */
 /*Fin estilos Menu Principal*/
 /* Inicio estilos Main Nuestro Menu*/
-.main-nm {
-  height: 90vh;
-  background-image: url(../Img/32.webp);
-  overflow: hidden;
-}
 .main-nm h2 {
-  margin: 20px;
+  font-size: 24px;
   text-align: center;
-  color: #472C1B;
+  margin-top: 10px;
+  /* Otros estilos para el encabezado */
 }
-.main-nm div {
-  justify-content: center;
-  overflow-x: hidden;
-}
-.main-nm .slider-box {
-  width: 1280px;
-  height: auto;
-  margin: 50px auto 0;
-}
-.main-nm .slider-box ul {
+.main-nm .carrusel {
   display: flex;
-  padding: 0;
-  width: 100%;
-  animation: slide 20s infinite alternate ease-in-out;
+  overflow-x: auto;
+  gap: 55px;
+  padding: 100px;
 }
-.main-nm .slider-box ul li {
-  width: 100%;
-  list-style: none;
-  position: relative;
+.main-nm .carrusel .elemento img {
+  max-width: 100%;
+  height: auto;
 }
-.main-nm .slider-box ul li img {
-  width: 65%;
-  height: 40%;
-  border: 2.5px solid #472C1B;
+.main-nm .carrusel .elemento p {
+  font-style: oblique;
+}
+@media (max-width: 768px) {
+  .main-nm .carrusel {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .main-nm .carrusel .elemento {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-nm .carrusel .elemento p {
+    font-size: 14px;
+  }
 }
 
-@keyframes slide {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0%;
-  }
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-  75% {
-    margin-left: -300%;
-  }
-  100% {
-    margin-left: -300%;
-  }
-}
 /* Fin estilos Main Nuestro Menu*/
 /* Inicios estilos Main Sobre nosotros*/
 .main-sec {
@@ -464,6 +436,8 @@ header nav {
   margin: 3px;
 }
 
+/* Fin estilos Main Reseñas*/
+/*Inicio estilo responsive Reseñas*/
 @media (max-width: 768px) {
   .main-res {
     height: auto;
@@ -485,6 +459,10 @@ header nav {
   .main-res .comentarios p {
     margin: 10px;
   }
+  .main-res .comentarios .boton3 {
+    display: block;
+    margin: 0 auto;
+  }
   .main-res .resena {
     display: block;
   }
@@ -500,7 +478,7 @@ header nav {
   }
   .main-res .resena form {
     display: block;
-    margin: 20px 0;
+    margin: 0 auto;
   }
   .main-res .resena form .inputs div {
     margin: 10px;
@@ -516,7 +494,54 @@ header nav {
     margin: 10px 0;
   }
 }
-/* Fin estilos Main Reseñas*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-res {
+    margin-top: 20px;
+    height: 90vh;
+  }
+  .main-res .estrellas img {
+    margin-left: 20px;
+    height: 50px;
+  }
+  .main-res .comentarios {
+    margin-left: 0;
+  }
+  .main-res .comentarios p {
+    margin: 15px;
+  }
+  .main-res .comentarios .boton3 {
+    margin-top: 20px;
+    width: 80px;
+    font-size: 11px;
+  }
+  .main-res .resena .taza {
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+  }
+  .main-res .resena form {
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .main-res .resena form .inputs div {
+    margin: 15px;
+  }
+  .main-res .resena form .inputs #email {
+    margin-right: 15px;
+  }
+  .main-res .resena form .inputs #comentar {
+    opacity: 75%;
+  }
+  .main-res .resena form .comen #com {
+    opacity: 75%;
+  }
+  .main-res .resena form .comen .boton2 {
+    margin: 8px;
+    width: 80px;
+    font-size: 10px;
+  }
+}
+/*Inicio estilo responsive Reseñas*/
 /* Inicio estilos Main Contacto*/
 .main-contac {
   background-image: url(../Img/Banner.webp);
